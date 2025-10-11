@@ -127,8 +127,8 @@
                                         <label for="loginPassword" class="form-label">تکرار رمز عبور:</label>
                                         
                                          {{ form.password2 }}
-                                         {% for Amir in form.password2.errors %}
-                                        <p class="alert alert-danger">{{ Amir }}</p>
+                                         {% for error in form.password2.errors %}
+                                        <p class="alert alert-danger">{{ error }}</p>
                                         {% endfor %}
                                         <div class="form-text text-muted">
                                         با دقت حروف بزرگ و کوچک، رمز عبور را ثبت کنید.چون اگر رمز عبور را فراموش کنید نمیتوانید ان را تغییر دهید
